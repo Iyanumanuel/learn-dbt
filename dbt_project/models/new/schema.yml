@@ -1,0 +1,12 @@
+
+version: 2
+
+models:
+    - name: dim_dates
+      description: "dbt model for dates"
+      columns:
+          - name: DATEKEY
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
