@@ -25,9 +25,9 @@ clean-targets:         # directories to be removed by `dbt clean`
     - "dbt_modules"
 
 on-run-end:
-    - 'grant usage on schema analytics.dbt to role analyst'
-    - 'grant select on all tables in schema analytics.dbt to role analyst'
-    - 'grant select on all views in schema analytics.dbt to role analyst'    
+    - 'grant usage on schema analytics.dbt to role ANALYST'
+    - 'grant select on all tables in schema analytics.dbt to role ANALYST'
+    - 'grant select on all views in schema analytics.dbt to role ANALYST'    
 
 
 
