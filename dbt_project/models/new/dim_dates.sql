@@ -1,4 +1,4 @@
-{{ config(materialized='view') }}
+--{{ config(materialized='view') }}
 
 -- CREATE OR REPLACE TABLE MY_DATE_DIMENSION (
 --    DATEKEY          BIGINT      NOT NULL
