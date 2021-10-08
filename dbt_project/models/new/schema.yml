@@ -10,3 +10,8 @@ models:
             tests:
                 - unique
                 - not_null
+    - name: date_filter
+      description: "dbt incremental model for dates up till current date"
+      columns:
+          - name: DATEKEY
+            description: "The primary key for this table"
