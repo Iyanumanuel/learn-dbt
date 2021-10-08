@@ -20,7 +20,7 @@
   )
   SELECT REPLACE (LEFT(MY_DATE,10), '-', '') AS DATEKEY 
         ,MY_DATE AS STANDARD_DATE
-        ,YEAR(MY_DATE) as YEAR
+        ,cast(YEAR(MY_DATE) as char(4)) as YEAR
         ,MONTH(MY_DATE) AS MONTH
         ,MONTHNAME(MY_DATE) AS MONTH_NAME
         ,DAY(MY_DATE) AS DAY_OF_MONTH
