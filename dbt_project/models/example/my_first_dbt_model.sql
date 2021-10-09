@@ -12,7 +12,7 @@
  -- {{ config(materialized='ephemeral') }}
 
  -- using alias
-{{ config(materialized='table', alias= 'first_model') }}
+{{ config(materialized='table', alias='first_model') }}
 
 with source_data as (
 
