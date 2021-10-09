@@ -22,9 +22,9 @@ with source_data as (
 
 )
 
-select *, {{ var('my_first_var')}} as first_var
+select *, {{ var('my_first_var') }} as first_var
 from source_data
-where id >= {{ var('my_first_var')}}
+where id >= {{ var('my_first_var') }}
 
 -- select *, {{ var('my_first_var')}} as first_var
 -- from source_data
