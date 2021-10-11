@@ -42,7 +42,4 @@ models:
       # Applies to all files under models/example/
       example:
           materialized: table
-        #   vars:
-        #     my_first_var: True
-        #     my_sec_var: 2020
-        #     my_third_var: 2
+
