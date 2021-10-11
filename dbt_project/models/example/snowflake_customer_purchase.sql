@@ -14,6 +14,4 @@ GROUP BY
     c.c_name,
     c.c_nationkey
 
-{{group_by(3)}}
-
 --HAVING SUM(o.o_totalprice) >0
