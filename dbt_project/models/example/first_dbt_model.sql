@@ -26,9 +26,6 @@ with source_data as (
 select *
 from source_data
 
--- select *, {{ var('my_first_var')}} as first_var
--- from source_data
--- where id >= {{ var('my_first_var')}} as first_var
 /*
     Uncomment the line below to remove records with null `id` values
 */
