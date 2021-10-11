@@ -16,15 +16,15 @@
 
 with source_data as (
 
-    select 1 as id
+    select 1 as id, 'CA' as state, '2020-01-01 00:00:00.000'::timestamp as updated_at
     union all
-    select null as id
-
+    select null as id, 'CT' as state, '2020-01-01 00:00:00.000'::timestamp as updated_at
+    union all
+    select 3 as id, 'VT' as state, '2020-01-01 00:00:00.000'::timestamp as updated_at
 )
 
-select *, {{ var('my_first_var') }} as first_var
+select *
 from source_data
-where id >= {{ var('my_first_var') }}
 
 -- select *, {{ var('my_first_var')}} as first_var
 -- from source_data
