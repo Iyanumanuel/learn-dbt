@@ -29,3 +29,12 @@ models:
                 - not_null
                 
     - name: first_dbt_model
+
+
+sources:
+  - name: sf_sample
+    database: snowflake_sample_data
+    schema: tpch_sf1
+    tables: 
+      - name: customer
+      - name: orders 
