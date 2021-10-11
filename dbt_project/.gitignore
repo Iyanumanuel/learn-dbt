@@ -2,3 +2,4 @@
 target/
 dbt_modules/
 logs/
+my_first_dbt_model.sql
