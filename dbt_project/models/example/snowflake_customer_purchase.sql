@@ -7,7 +7,7 @@ SELECT
     c.c_nationkey as nation,
     SUM(o.o_totalprice) as total_price
 FROM {{ source('sf_sample', 'customer') }} c
-LEFT JOIN  {{ source('sf_sample', 'orders') }} c o
+LEFT JOIN  {{ source('sf_sample', 'orders') }} o
 ON c.c_custkey = o.o_custkey
 GROUP BY
     c.c_custkey,
