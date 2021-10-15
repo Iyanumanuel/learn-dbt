@@ -26,6 +26,6 @@ GROUP BY
     c.c_name,
     c.c_nationkey
 
-{& if target.name == 'dev' %}
+{% if target.name == 'dev' %}
 HAVING SUM(o.o_totalprice) >0
 {% endif %}
