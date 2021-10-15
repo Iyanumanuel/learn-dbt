@@ -47,4 +47,4 @@ models:
         #     my_sec_var: 2020
         #     my_third_var: 2
           pre-hook: "insert into dbt.audit"(model, state, time) values ('{{this.name}}', 'starting model deployment', 'current_timestamp')
-        #  tags: "nightly"
+          tags: "nightly"
